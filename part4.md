@@ -1,84 +1,102 @@
 # Part IV
 
-## Scenario
+## Challenge 1
 
-
-### Challenge 1
-
-__hint:__
-
-### Challenge 2
+The mobile device of an employee in CEHORG has been hacked by the hacker to perform DoS attack on one of the server in company network. You are assigned to analyse "Andro.pcapng" located in Documents directory of EH workstation-2 and identify the severity level of the attack. (Note: perform deep down Expert Info analysis). (Format: Aaaaaaa )
 
 __hint:__
 
-### Challenge 3
+## Challenge 2
+
+An ex-employee of CEHORG is suspected to be performing insider attack. You are assigned a task to attain KEYCODE-75 used in the employees' mobile phone. Note: use option p in PhoneSploit for next page. (Format: AAAAAAAAAA )
 
 __hint:__
 
-### Challenge 4
+1. python3 phonesploit.py
+2. p # next page
+3. 24 # use key code
+
+## Challenge 3
+
+An employee in CEHORG has secretly acquired Confidential access ID through an application from the company. He has saved this information on the Downloads folder of his Android mobile phone. You have been assigned a task as an ethical hacker to access the file and delete it covertly. Enter the account information present in the file. Note: Only provide the numeric values in the answer field. (Format: NNNNNNNN)
 
 __hint:__
 
-### Challenge 5
+1. python3 phonesploit.py
+2. 3 # connect new device
+3. 172.16.0.21
+4. 4 # shell
+5. cd /sdcard/Download
+
+## Challenge 4
+
+An attacker has hacked one of the employees android device in CEHORG and initiated LOIC attack from the device. You are an ethical hacker who had obtained a screenshot of the attack using a background application. Obtain the screenshot of the attack using PhoneSploit from the attacked mobile device and determine the targeted machine IP along with send method. (Format: NNN.NN.N.NN*AAAA)
 
 __hint:__
 
-### Challenge 6
+1. python3 phonesploit.py
+2. 4 # pull folder
+3. 172.16.0.21
+4. /sdcard/DCIM # source
+5. /home/attacker/Desktop/DCIM/ # destination
+
+## Challenge 5
+
+An attacker installed a malicious mobile application 'AntiMalwarescanner.apk' on the victims android device which is located in EH workstation-2 documents folder. You are assigned a task to perform security audit on the mobile application and find out whether the application using permission to Read-call-logs. (Format: Aaa )
+
+__hint:__ www.sisik.eu/apk-tool
+
+## Challenge 6
+
+An attacker had sent a message 166.150.247.183/US to the victim. You are assigned to perform footprinting using shodan.io in order to identify whether the message belongs to SCADA/ICS/IoT systems in US. (Format: AaA)
 
 __hint:__
 
-### Challenge 7
+## Challenge 7
+
+CEHORG hosts multiple IOT devices and sensors to manage its supply chain fleet. You are assinged a task to examine the file "IOT Traffic.pcapng" located in the Home directory of the root user in the "EH Workstation - 1" machine. Analyze the packet and find the topic of the message sent to the sensor. (Format: Aaaaa*Aaaaa)
+
+__hint:__ wireshark mqtt
+## Challenge 8
 
 __hint:__
 
-### Challenge 8
+## Challenge 9
+
+CEHORG hosts multiple IOT devices and network sensors to manage its IT-department. You are assigned a task to examine the file "NetworkNS_Traffic.pcapng" located in the Documents folder of the user in the "EH Workstation - 2" machine. Analyze the packet and find the alert message sent to the sensor. (Format: Aaaa Aaa*aa *aaaa)
 
 __hint:__
 
-### Challenge 9
+1. wireshark
+2. mqtt
+3. follow tcp stream
 
-__hint:__
+## Challenge 10
 
-### Challenge 10
+You have received a folder named "Archive" from a vendor. You suspect that someone might have tampered with the files during transmission. The Original hashes of the files have been sent by the sender separately and are stored in a file named FileHashes.txt stored in the Document folder in the "EH Workstation – 2" machine. Your task is to check the integrity of the files by comparing the MD5 hashes. Compare the hash values and determine the file name that has been tampered with. Note: Exclude the file extension in the answer field. The answer is case-sensitive. (Format: Aaaaaa)
 
-__hint:__
+__hint:__ HashCalc
 
-### Challenge 11
+## Challenge 11
 
-__hint:__
+An attacker has intruded into the CEHORG network with malicious intent. He has identified a vulnerability in a machine. He has encoded the machine's IP address and left it in the database. While auditing the database, the encoded file was identified by the database admin. Decode the EncodedFile.txt file in the Document folder in the "EH Workstation – 2" machine and enter the IP address as the answer. (Hint: Password to decode the file is Pa$$w0rd). (Format: NN.NN,NN,NN)
 
-### Challenge 12
+__hint:__ BCTextEncoder
 
-__hint:__
+## Challenge 12
 
-### Challenge 13
+The Access code of an employee was stolen from the CEHORG database. The attacker has encrypted the file using the Advance Encryption Package. You have been assigned a task to decrypt the file; the organization has retained the cipher file ""AccessCode.docx.aes"" in the Document folder in the ""EH Workstation – 2"" machine. Determine the access code by decrypting the file. Hint: Use ""qwerty"" as the decryption password. Note: Advanced Encryption Package is available at E:\CEH-Tools\CEHv12 Module 20 Cryptography\Cryptography Tools. (Format: AAA*AAA*NNNN)
 
-__hint:__
+__hint:__ Advance Encryption Package
 
-### Challenge 14
+## Challenge 13
 
-__hint:__
+A VeraCrypt volume file "secret" is stored on the Document folder in the "EH Workstation – 2" machine. You are an ethical hacker working with CEHORG; you have been tasked to decrypt the encrypted volume and determine the number of files stored in the volume. (Hint: Password: test). (Format: N)
 
-### Challenge 15
+__hint:__ VeraCrypt
 
-__hint:__
+## Challenge 14
 
-### Challenge 16
+An attacker had sent a file cryt-128-06encr.hex containing ransom file password, which is located in documents folder of EH-workstation-2. You are assigned a task to decrypt the file using cryp tool. Perform cryptanalysis, Identify the algorithm used for file encryption and hidden text. Note: check filename for key length and hex characters. (Format: Aaaaaaa/**aa**aA*a)
 
-__hint:__
-
-### Challenge 17
-
-__hint:__
-
-### Challenge 18
-
-__hint:__
-
-### Challenge 19
-
-__hint:__
-
-### Challenge 20
-
-__hint:__
+__hint:__ twofish 06
